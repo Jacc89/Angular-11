@@ -1,0 +1,51 @@
+<div class="fondo">
+  <div class="container pt-3">
+    <app-count-empleados [todos]="allEmpleados()"
+    [masculino]=" totalMasculino()"
+    [femenino]="totalFemenino()"></app-count-empleados>
+    <!-- <div class="card ">
+      <div class="card-body ">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sexo" id="todos" value="todos" [(ngModel)]="radioSeleccionado">
+          <label class="form-check-label" for="todos">Todos({{allEmpleados()}})</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sexo" id="femenino" value="femenino" [(ngModel)]="radioSeleccionado">
+          <label class="form-check-label" for="femenino">Femenino({{totalFemenino()}})</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino" [(ngModel)]="radioSeleccionado" >
+          <label class="form-check-label" for="masculino">Maculino({{totalMasculino()}})</label>
+        </div>
+      </div>
+    </div> -->
+    <div class="card mt-3">
+      <div class="card-body">
+        <table class="table ">
+          <thead class="table table-dark">
+            <tr>
+              <th >Legajo</th>
+              <th >Nombre</th>
+              <th >Apellido</th>
+              <th >Sexo</th>
+              <th>Salario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container  *ngFor="let empleado of listEmpleado" >
+              <tr *ngIf="radioSeleccionado === 'todos' || radioSeleccionado === empleado.sexo">
+                <td>{{ empleado.legajo }}</td>
+                <td>{{empleado.nombre }}</td>
+                <td>{{empleado.apellido}}</td>
+                <td>{{empleado.sexo | uppercase}}</td>
+                <td>{{ empleado.salario | currency}}</td>
+              </tr>
+            </ng-container>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+

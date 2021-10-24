@@ -1,0 +1,57 @@
+body{
+  background-image: url('../../../../assets/bmi/bosque.jpg');
+  background-position: center;
+  background-size: cover;
+  /* background: #061161; */
+  height: 100vh;
+}
+.titulo{
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 25px;
+
+}
+.fondoItem{
+  background-color: #880a0dc2;
+  height: 400px;
+  border-radius: 20px;
+  color: #fff;
+
+}
+.row{
+  margin: 20px;
+}
+.btn-color{
+  border-radius: 20px;
+  width: 100%;
+}
+.btn-color:hover{
+  opacity: 70%;
+}
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.resultado{
+  color:rgb(12, 179, 12);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+.estiloNumero{
+  font-size: 80px;
+  font-weight: 700;
+  padding-top: 25px;
+  padding-bottom:  45px;
+}
+.interpretacion{
+  margin: 10px;
+  font-size: 18px;
+  text-align: center;
+}

@@ -1,0 +1,71 @@
+.titulo{
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 25px;
+
+}
+.row{
+  margin-top: 20px;
+}
+.fondoItem{
+  background-color: #880a0dc2;
+  height: 130px;
+  border-radius: 20px;
+  color: #fff;
+
+}
+.btn-color{
+  border-radius: 20px;
+  width: 100%;
+}
+.btn-color:hover{
+  opacity: 70%;
+}
+.sexo{
+  font-size: 25px;
+}
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contenedorsexo{
+  cursor: pointer;
+}
+
+.estilonumero{
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.cm{
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.form-range{
+  padding: 0px 20px;
+}
+input[type=range]::-webkit-slider-thumb{
+  background:  #0d6efd;
+}
+p{
+  margin: 0;
+}
+.sumaresta{
+  cursor: pointer;
+  background-color: #0d6efd;
+  padding: 7px;
+  border-radius: 15px;
+  margin-left: 5px ;
+}
+
+.sexoDesactivo{
+  background-color: #e90f0f80;
+}
+

@@ -1,0 +1,9 @@
+.body1{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('../../../assets/cambio/fondo.jpg');
+  /* background-image:url('../../../assets/cambio/fond.jpg') ; */
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+}
+

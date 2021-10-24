@@ -1,0 +1,10 @@
+body{
+  background-image: url('../../../assets/bmi/bosque.jpg');
+  background-position: center;
+  background-size: cover;
+  /* background: #061161; */
+  height: 100vh;
+}
+.completa{
+  margin-top: 0%;
+}
