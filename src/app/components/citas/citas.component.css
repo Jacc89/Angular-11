@@ -1,0 +1,15 @@
+.citas{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('../../../assets/citas/cita.jpg');
+  /* background-image:url('../../../assets/cambio/fond.jpg') ; */
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: rgb(224, 224, 205);
+  opacity: 90%;
+}
+.tituloclass{
+  font-size:30px;
+  font-family: 'Nerko One', cursive;
+  padding-top: 3px;
+
+}

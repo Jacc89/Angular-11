@@ -17,6 +17,9 @@ import { InicioComponent } from './components/bmicalculador/inicio/inicio.compon
 import { ResultadoComponent } from './components/bmicalculador/resultado/resultado.component';
 import { EmpleadoListComponent } from './components/empleado-list/empleado-list.component';
 import { CountEmpleadosComponent } from './components/empleado-list/count-empleados/count-empleados.component';
+import { CitasComponent } from './components/citas/citas.component';
+import { CrearcitasComponent } from './components/citas/crearcitas/crearcitas.component';
+import { ListcitasComponent } from './components/citas/listcitas/listcitas.component';
 
 
 @NgModule({
@@ -35,6 +38,9 @@ import { CountEmpleadosComponent } from './components/empleado-list/count-emplea
     ResultadoComponent,
     EmpleadoListComponent,
     CountEmpleadosComponent,
+    CitasComponent,
+    CrearcitasComponent,
+    ListcitasComponent,
 
   ],
   imports: [

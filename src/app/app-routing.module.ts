@@ -12,6 +12,7 @@ import { InicioComponent } from './components/bmicalculador/inicio/inicio.compon
 import { ResultadoComponent } from './components/bmicalculador/resultado/resultado.component';
 import { BMICALCULADORComponent } from './components/bmicalculador/bmicalculador.component';
 import { EmpleadoListComponent } from './components/empleado-list/empleado-list.component';
+import { CitasComponent } from './components/citas/citas.component';
 
 const routes: Routes = [
 
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'inicio', component: BMICALCULADORComponent},
   { path: 'resultadoBIM/:valor', component: ResultadoComponent },
   { path: 'empleadoList', component: EmpleadoListComponent},
-  { path: '', redirectTo: 'empleadoList', pathMatch: 'full'}
+  { path: 'citas', component:CitasComponent },
+  { path: '', redirectTo: 'citas', pathMatch: 'full'}
 
 
 ];
