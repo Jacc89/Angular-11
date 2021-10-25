@@ -4,12 +4,13 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
-  color: rgb(224, 224, 205);
+
   opacity: 90%;
 }
 .tituloclass{
-  font-size:30px;
+  font-size:3em;
   font-family: 'Nerko One', cursive;
   padding-top: 3px;
+  color: rgb(224, 224, 205);
 
 }
