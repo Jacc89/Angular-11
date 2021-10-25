@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
+
 @Component({
   selector: 'app-count-empleados',
   templateUrl: './count-empleados.component.html',
@@ -22,5 +23,10 @@ export class CountEmpleadosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  radioChange(): void{
+    this.countRadioSeleccionado.emit(this.radioSeleccionado);
+  }
+
 
 }

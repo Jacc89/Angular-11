@@ -33,5 +33,10 @@ radioSeleccionado ='todos';
     return this.listEmpleado.filter(list => list.sexo === 'masculino').length;
   }
 
+  RadioChangeSeleccionado(radioSeleccionadoChange:string):void{
+    this.radioSeleccionado = radioSeleccionadoChange;
+
+  }
+
 
 }

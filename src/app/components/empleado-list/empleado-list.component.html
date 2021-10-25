@@ -2,7 +2,8 @@
   <div class="container pt-3">
     <app-count-empleados [todos]="allEmpleados()"
     [masculino]=" totalMasculino()"
-    [femenino]="totalFemenino()"></app-count-empleados>
+    [femenino]="totalFemenino()"
+    (countRadioSeleccionado)="RadioChangeSeleccionado($event)"></app-count-empleados>
     <!-- <div class="card ">
       <div class="card-body ">
         <div class="form-check form-check-inline">
