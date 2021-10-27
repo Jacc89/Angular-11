@@ -20,6 +20,11 @@ import { CountEmpleadosComponent } from './components/empleado-list/count-emplea
 import { CitasComponent } from './components/citas/citas.component';
 import { CrearcitasComponent } from './components/citas/crearcitas/crearcitas.component';
 import { ListcitasComponent } from './components/citas/listcitas/listcitas.component';
+import { GastosComponent } from './components/presupuesto/gastos/gastos.component';
+import { PresupuestoComponent } from './components/presupuesto/presupuesto.component';
+import { IngresoPresupuestComponent } from './components/presupuesto/ingreso-presupuest/ingreso-presupuest.component';
+import { AgregarGastosComponent } from './components/presupuesto/gastos/agregar-gastos/agregar-gastos.component';
+import { ListarGastosComponent } from './components/presupuesto/gastos/listar-gastos/listar-gastos.component';
 
 
 @NgModule({
@@ -41,6 +46,11 @@ import { ListcitasComponent } from './components/citas/listcitas/listcitas.compo
     CitasComponent,
     CrearcitasComponent,
     ListcitasComponent,
+    GastosComponent,
+    PresupuestoComponent,
+    IngresoPresupuestComponent,
+    AgregarGastosComponent,
+    ListarGastosComponent,
 
   ],
   imports: [

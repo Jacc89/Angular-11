@@ -1,0 +1,19 @@
+.vista
+{
+  color: rgb(231, 224, 212);
+}
+input{
+  text-align: center;
+  /* position: absolute; */
+}
+button{
+  width: 100%;
+  margin-top: 1em;
+
+}
+
+.error{
+  font-size: 1em;
+  margin-bottom: 1em;
+
+}

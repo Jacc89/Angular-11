@@ -13,6 +13,9 @@ import { ResultadoComponent } from './components/bmicalculador/resultado/resulta
 import { BMICALCULADORComponent } from './components/bmicalculador/bmicalculador.component';
 import { EmpleadoListComponent } from './components/empleado-list/empleado-list.component';
 import { CitasComponent } from './components/citas/citas.component';
+import { PresupuestoComponent } from './components/presupuesto/presupuesto.component';
+import { GastosComponent } from './components/presupuesto/gastos/gastos.component';
+import { IngresoPresupuestComponent } from './components/presupuesto/ingreso-presupuest/ingreso-presupuest.component';
 
 const routes: Routes = [
 
@@ -25,7 +28,10 @@ const routes: Routes = [
   { path: 'resultadoBIM/:valor', component: ResultadoComponent },
   { path: 'empleadoList', component: EmpleadoListComponent},
   { path: 'citas', component:CitasComponent },
-  { path: '', redirectTo: 'citas', pathMatch: 'full'}
+  { path: 'presupuesto', component: PresupuestoComponent },
+  { path: 'gastos', component: GastosComponent},
+  // { path: 'ingreso', component: IngresoPresupuestComponent },
+  { path: '', redirectTo: 'presupuesto', pathMatch: 'full'}
 
 
 ];
