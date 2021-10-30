@@ -38,18 +38,12 @@ export class AgregarGastosComponent implements OnInit {
     }else{
       // crear el objeto
       const gasto ={
-        nombre:this.nombreGasto,
-        cantidad: this.cantidad
+        nombre : this.nombreGasto,
+        cantidad : this.cantidad
       }
 
       // enviar el objeto a los subcriptores via sujet
       this._service.agregarGasto(gasto);
-
-
-
-
-
-
 
       // reseteo de form
       this.formIncorrecto = false;
