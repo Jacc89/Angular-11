@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -25,6 +26,17 @@ import { PresupuestoComponent } from './components/presupuesto/presupuesto.compo
 import { IngresoPresupuestComponent } from './components/presupuesto/ingreso-presupuest/ingreso-presupuest.component';
 import { AgregarGastosComponent } from './components/presupuesto/gastos/agregar-gastos/agregar-gastos.component';
 import { ListarGastosComponent } from './components/presupuesto/gastos/listar-gastos/listar-gastos.component';
+import { ClimaComponent } from './components/clima/clima.component';
+import { DashboardclimaComponent } from './components/clima/dashboardclima/dashboardclima.component';
+import { NavclimaComponent } from './components/clima/navclima/navclima.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { config } from 'rxjs';
+
+export function HttpLoaderFactory(http: HttpClient){
+  return new TranslateHttpLoader(http);
+}
 
 
 @NgModule({
@@ -51,13 +63,16 @@ import { ListarGastosComponent } from './components/presupuesto/gastos/listar-ga
     IngresoPresupuestComponent,
     AgregarGastosComponent,
     ListarGastosComponent,
+    ClimaComponent,
+    DashboardclimaComponent,
+    NavclimaComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
