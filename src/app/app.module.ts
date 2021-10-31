@@ -33,6 +33,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { config } from 'rxjs';
+import { BitlyComponent } from './components/bitly/bitly.component';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http);
@@ -66,6 +67,7 @@ export function HttpLoaderFactory(http: HttpClient){
     ClimaComponent,
     DashboardclimaComponent,
     NavclimaComponent,
+    BitlyComponent,
 
   ],
   imports: [
