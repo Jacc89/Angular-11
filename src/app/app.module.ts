@@ -38,6 +38,7 @@ import { NavurlComponent } from './components/bitly/navurl/navurl.component';
 import { SpinnerComponent } from './components/bitly/spinner/spinner.component';
 import { ShortUrlComponent } from './components/bitly/short-url/short-url.component';
 import { ShortInterceptor } from './services/short.interceptor';
+import { NoticiasComponent } from './components/noticias/noticias.component';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http);
@@ -75,6 +76,7 @@ export function HttpLoaderFactory(http: HttpClient){
     NavurlComponent,
     SpinnerComponent,
     ShortUrlComponent,
+    NoticiasComponent,
 
   ],
   imports: [

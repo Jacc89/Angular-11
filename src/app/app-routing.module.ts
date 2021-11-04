@@ -16,6 +16,7 @@ import { PresupuestoComponent } from './components/presupuesto/presupuesto.compo
 import { GastosComponent } from './components/presupuesto/gastos/gastos.component';
 import { ClimaComponent } from './components/clima/clima.component';
 import { BitlyComponent } from './components/bitly/bitly.component';
+import { NoticiasComponent } from './components/noticias/noticias.component';
 
 const routes: Routes = [
 
@@ -24,15 +25,16 @@ const routes: Routes = [
   { path: 'piano', component: PianoComponent },
   { path: 'tareas', component: TareaComponent },
   { path: 'cambio', component: CambioComponent },
-  { path: 'inicio', component: BMICALCULADORComponent},
+  { path: 'inicio', component: BMICALCULADORComponent },
   { path: 'resultadoBIM/:valor', component: ResultadoComponent },
-  { path: 'empleadoList', component: EmpleadoListComponent},
+  { path: 'empleadoList', component: EmpleadoListComponent },
   { path: 'citas', component:CitasComponent },
   { path: 'presupuesto', component: PresupuestoComponent },
-  { path: 'gastos', component: GastosComponent},
-  { path: 'clima', component: ClimaComponent},
-  { path: 'url', component: BitlyComponent},
-  { path: '', redirectTo: 'url', pathMatch: 'full'}
+  { path: 'gastos', component: GastosComponent },
+  { path: 'clima', component: ClimaComponent },
+  { path: 'url', component: BitlyComponent },
+  { path: 'noticias', component: NoticiasComponent },
+  { path: '', redirectTo: 'noticias', pathMatch: 'full'}
 ];
 
 
