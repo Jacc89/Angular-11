@@ -15,6 +15,7 @@ import { CitasComponent } from './components/citas/citas.component';
 import { PresupuestoComponent } from './components/presupuesto/presupuesto.component';
 import { GastosComponent } from './components/presupuesto/gastos/gastos.component';
 import { ClimaComponent } from './components/clima/clima.component';
+import { BitlyComponent } from './components/bitly/bitly.component';
 
 const routes: Routes = [
 
@@ -30,7 +31,8 @@ const routes: Routes = [
   { path: 'presupuesto', component: PresupuestoComponent },
   { path: 'gastos', component: GastosComponent},
   { path: 'clima', component: ClimaComponent},
-  { path: '', redirectTo: 'clima', pathMatch: 'full'}
+  { path: 'url', component: BitlyComponent},
+  { path: '', redirectTo: 'url', pathMatch: 'full'}
 ];
 
 

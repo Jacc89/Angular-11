@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -34,6 +34,10 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { config } from 'rxjs';
 import { BitlyComponent } from './components/bitly/bitly.component';
+import { NavurlComponent } from './components/bitly/navurl/navurl.component';
+import { SpinnerComponent } from './components/bitly/spinner/spinner.component';
+import { ShortUrlComponent } from './components/bitly/short-url/short-url.component';
+import { ShortInterceptor } from './services/short.interceptor';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http);
@@ -68,6 +72,9 @@ export function HttpLoaderFactory(http: HttpClient){
     DashboardclimaComponent,
     NavclimaComponent,
     BitlyComponent,
+    NavurlComponent,
+    SpinnerComponent,
+    ShortUrlComponent,
 
   ],
   imports: [
@@ -76,7 +83,13 @@ export function HttpLoaderFactory(http: HttpClient){
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ShortInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
