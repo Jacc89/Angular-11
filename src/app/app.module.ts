@@ -39,6 +39,10 @@ import { SpinnerComponent } from './components/bitly/spinner/spinner.component';
 import { ShortUrlComponent } from './components/bitly/short-url/short-url.component';
 import { ShortInterceptor } from './services/short.interceptor';
 import { NoticiasComponent } from './components/noticias/noticias.component';
+import { FormNoticiasComponent } from './components/noticias/form-noticias/form-noticias.component';
+import { ListNoticiasComponent } from './components/noticias/list-noticias/list-noticias.component';
+import { NavNoticiasComponent } from './components/noticias/nav-noticias/nav-noticias.component';
+import { SpinnernotiComponent } from './shared/spinnernoti/spinnernoti.component';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http);
@@ -77,6 +81,10 @@ export function HttpLoaderFactory(http: HttpClient){
     SpinnerComponent,
     ShortUrlComponent,
     NoticiasComponent,
+    FormNoticiasComponent,
+    ListNoticiasComponent,
+    NavNoticiasComponent,
+    SpinnernotiComponent,
 
   ],
   imports: [
