@@ -1,4 +1,6 @@
-<app-nav-noticias></app-nav-noticias>
+<app-nav-noticias [titulo]="'Buscador de Noticias'"></app-nav-noticias>
 <div class="container mt-3">
-  <app-form-noticias></app-form-noticias>
+  <app-form-noticias (parametrosSeleccionados)="buscarNoticias($event)"></app-form-noticias>
+  <app-spinnernoti *ngIf="loading"></app-spinnernoti>
+  <app-list-noticias [listNoticias]="PlistNoticias"></app-list-noticias>
 </div>

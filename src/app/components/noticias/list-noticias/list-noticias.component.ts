@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-list-noticias',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-noticias.component.css']
 })
 export class ListNoticiasComponent implements OnInit {
+  @Input() listNoticias: any;
 
   constructor() { }
 

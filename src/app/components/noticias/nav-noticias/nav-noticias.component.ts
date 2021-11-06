@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nav-noticias',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-noticias.component.css']
 })
 export class NavNoticiasComponent implements OnInit {
+  @Input() titulo: string;
 
-  constructor() { }
+  constructor() {
+    this.titulo = '';
+   }
 
   ngOnInit(): void {
   }
