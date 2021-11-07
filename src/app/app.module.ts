@@ -29,10 +29,7 @@ import { ListarGastosComponent } from './components/presupuesto/gastos/listar-ga
 import { ClimaComponent } from './components/clima/clima.component';
 import { DashboardclimaComponent } from './components/clima/dashboardclima/dashboardclima.component';
 import { NavclimaComponent } from './components/clima/navclima/navclima.component';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { config } from 'rxjs';
 import { BitlyComponent } from './components/bitly/bitly.component';
 import { NavurlComponent } from './components/bitly/navurl/navurl.component';
 import { SpinnerComponent } from './components/bitly/spinner/spinner.component';
@@ -43,6 +40,11 @@ import { FormNoticiasComponent } from './components/noticias/form-noticias/form-
 import { ListNoticiasComponent } from './components/noticias/list-noticias/list-noticias.component';
 import { NavNoticiasComponent } from './components/noticias/nav-noticias/nav-noticias.component';
 import { SpinnernotiComponent } from './shared/spinnernoti/spinnernoti.component';
+import { BuscarImagenComponent } from './components/clon-pixabay/buscar-imagen/buscar-imagen.component';
+import { ListImagenComponent } from './components/clon-pixabay/list-imagen/list-imagen.component';
+import { NavImagenComponent } from './components/clon-pixabay/nav-imagen/nav-imagen.component';
+import { ErrorComponent } from './shared/error/error.component';
+import { ClonPixabayComponent } from './components/clon-pixabay/clon-pixabay.component';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http);
@@ -85,6 +87,11 @@ export function HttpLoaderFactory(http: HttpClient){
     ListNoticiasComponent,
     NavNoticiasComponent,
     SpinnernotiComponent,
+    BuscarImagenComponent,
+    ListImagenComponent,
+    NavImagenComponent,
+    ErrorComponent,
+    ClonPixabayComponent,
 
   ],
   imports: [

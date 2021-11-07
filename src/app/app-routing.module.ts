@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
@@ -17,6 +16,8 @@ import { GastosComponent } from './components/presupuesto/gastos/gastos.componen
 import { ClimaComponent } from './components/clima/clima.component';
 import { BitlyComponent } from './components/bitly/bitly.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
+import { ClonPixabayComponent } from './components/clon-pixabay/clon-pixabay.component';
+
 
 const routes: Routes = [
 
@@ -34,7 +35,8 @@ const routes: Routes = [
   { path: 'clima', component: ClimaComponent },
   { path: 'url', component: BitlyComponent },
   { path: 'noticias', component: NoticiasComponent },
-  { path: '', redirectTo: 'noticias', pathMatch: 'full'}
+  { path: 'pixabay', component: ClonPixabayComponent },
+  { path: '', redirectTo: 'pixabay', pathMatch: 'full'}
 ];
 
 
