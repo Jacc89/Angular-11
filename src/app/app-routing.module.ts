@@ -17,6 +17,7 @@ import { ClimaComponent } from './components/clima/clima.component';
 import { BitlyComponent } from './components/bitly/bitly.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { ClonPixabayComponent } from './components/clon-pixabay/clon-pixabay.component';
+import { TarjetaCreditoComponent } from './components/tarjeta-credito/tarjeta-credito.component';
 
 
 const routes: Routes = [
@@ -36,7 +37,8 @@ const routes: Routes = [
   { path: 'url', component: BitlyComponent },
   { path: 'noticias', component: NoticiasComponent },
   { path: 'pixabay', component: ClonPixabayComponent },
-  { path: '', redirectTo: 'pixabay', pathMatch: 'full'}
+  { path: 'tarjeta', component: TarjetaCreditoComponent },
+  { path: '', redirectTo: 'tarjeta', pathMatch: 'full'}
 ];
 
 

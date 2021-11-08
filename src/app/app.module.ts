@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
@@ -45,6 +45,9 @@ import { ListImagenComponent } from './components/clon-pixabay/list-imagen/list-
 import { NavImagenComponent } from './components/clon-pixabay/nav-imagen/nav-imagen.component';
 import { ErrorComponent } from './shared/error/error.component';
 import { ClonPixabayComponent } from './components/clon-pixabay/clon-pixabay.component';
+import { TarjetaCreditoComponent } from './components/tarjeta-credito/tarjeta-credito.component';
+import { CrearTargetaComponent } from './components/tarjeta-credito/crear-targeta/crear-targeta.component';
+import { ListarTargetaComponent } from './components/tarjeta-credito/listar-targeta/listar-targeta.component';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http);
@@ -92,6 +95,9 @@ export function HttpLoaderFactory(http: HttpClient){
     NavImagenComponent,
     ErrorComponent,
     ClonPixabayComponent,
+    TarjetaCreditoComponent,
+    CrearTargetaComponent,
+    ListarTargetaComponent,
 
   ],
   imports: [
@@ -99,6 +105,7 @@ export function HttpLoaderFactory(http: HttpClient){
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     {
