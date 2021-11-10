@@ -34,7 +34,7 @@ const routes: Routes = [
   { path: 'presupuesto', component: PresupuestoComponent },
   { path: 'gastos', component: GastosComponent },
   { path: 'clima', component: ClimaComponent },
-  { path: 'url', component: BitlyComponent },
+  { path: 'bitly', component: BitlyComponent },
   { path: 'noticias', component: NoticiasComponent },
   { path: 'pixabay', component: ClonPixabayComponent },
   { path: 'tarjeta', component: TarjetaCreditoComponent },

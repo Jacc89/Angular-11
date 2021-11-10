@@ -40,7 +40,7 @@ export class ListImagenComponent implements OnInit {
         this._service.setError('Opsss.... no encontramos ningun resultado');
         return;
       }
-      console.log(Math.floor(data.totalHits / this.ImgPorPag));
+      // console.log(Math.floor(data.totalHits / this.ImgPorPag));
       this.calcularTotalPag = Math.floor(data.totalHits / this.ImgPorPag);
       this.listImag = data.hits;
     }, error =>{

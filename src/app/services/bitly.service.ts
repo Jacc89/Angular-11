@@ -22,6 +22,6 @@ export class BitlyService {
           long_url: nombreUrl
         }
 
-        return this.http.post(this.url, body);
+        return this.http.post(this.url, body, { headers: tokenHeader});
       }
 }
