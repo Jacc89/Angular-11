@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -104,7 +108,10 @@ export function HttpLoaderFactory(http: HttpClient){
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
+    AngularFirestoreModule
   ],
   providers: [
     // {

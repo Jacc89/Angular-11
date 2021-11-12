@@ -1,4 +1,4 @@
-export class Tarjeta{
+export class TarjetaCredito{
   id?: string;
   titular: string;
   numeroTarjeta: string;
@@ -6,9 +6,7 @@ export class Tarjeta{
   cvv:  number;
   fechaCreacion:  Date;
   fechaActualizacion:  Date;
-
-
-
+  
   constructor(
     titular: string,
     numeroTarjeta: string,

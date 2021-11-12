@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tarjetas-d90d1": {
+      "hosting": {
+        "guia11": [
+          "tarjetas-d90d1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tarjetas-d90d1"
+  }
+}
