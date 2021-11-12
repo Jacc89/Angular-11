@@ -51,6 +51,7 @@ import { ClonPixabayComponent } from './components/clon-pixabay/clon-pixabay.com
 import { TarjetaCreditoComponent } from './components/tarjeta-credito/tarjeta-credito.component';
 import { CrearTargetaComponent } from './components/tarjeta-credito/crear-targeta/crear-targeta.component';
 import { ListarTargetaComponent } from './components/tarjeta-credito/listar-targeta/listar-targeta.component';
+import { RoutingComponent } from './components/routing/routing.component';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http);
@@ -101,6 +102,7 @@ export function HttpLoaderFactory(http: HttpClient){
     TarjetaCreditoComponent,
     CrearTargetaComponent,
     ListarTargetaComponent,
+    RoutingComponent,
 
   ],
   imports: [
