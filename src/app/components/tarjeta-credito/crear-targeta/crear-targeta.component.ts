@@ -11,9 +11,9 @@ import { TarjetaService } from 'src/app/services/tarjeta.service';
 export class CrearTargetaComponent implements OnInit {
   form: FormGroup;
 
-  constructor( private _form: FormBuilder, 
+  constructor( private _form: FormBuilder,
                private _targetaService: TarjetaService
-               
+
                 ) {
 
     this.form = this._form.group({
@@ -28,7 +28,7 @@ export class CrearTargetaComponent implements OnInit {
   ngOnInit(): void {
   }
   crearTarjeta(){
-    const TARJETA: TarjetaCredito = { 
+    const TARJETA: TarjetaCredito = {
       titular: this.form.value.titular,
       numeroTarjeta: this.form.value.numeroTarjeta,
       fechaExpiracion: this.form.value.fechaExpiracion,
@@ -37,13 +37,13 @@ export class CrearTargetaComponent implements OnInit {
       fechaActualizacion: new Date(),
     }
     console.log(TARJETA);
-    this._targetaService.guardarTarjeta(TARJETA).then(()=>{
-      console.log('targeta reguistrada');   
-      this.form.reset();   
+    // this._targetaService.guardarTarjeta(TARJETA).then(()=>{
+    //   console.log('targeta reguistrada');
+    //   this.form.reset();
 
-    }, error =>{
-      console.log(error);
-    })
+    // }, error =>{
+    //   console.log(error);
+    // })
   }
 
 }

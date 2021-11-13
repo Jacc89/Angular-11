@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RoutingComponent } from './routing.component';
+import { NavbarRouteoComponent } from './navbar-routeo.component';
 
-describe('RoutingComponent', () => {
-  let component: RoutingComponent;
-  let fixture: ComponentFixture<RoutingComponent>;
+describe('NavbarRouteoComponent', () => {
+  let component: NavbarRouteoComponent;
+  let fixture: ComponentFixture<NavbarRouteoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RoutingComponent ]
+      declarations: [ NavbarRouteoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RoutingComponent);
+    fixture = TestBed.createComponent(NavbarRouteoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

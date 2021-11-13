@@ -2,11 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
-import { AngularFireModule } from '@angular/fire/compat';
-import { environment } from '../environments/environment';
 
+// componentes
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PianoComponent } from './components/piano/piano.component';
@@ -51,7 +48,13 @@ import { ClonPixabayComponent } from './components/clon-pixabay/clon-pixabay.com
 import { TarjetaCreditoComponent } from './components/tarjeta-credito/tarjeta-credito.component';
 import { CrearTargetaComponent } from './components/tarjeta-credito/crear-targeta/crear-targeta.component';
 import { ListarTargetaComponent } from './components/tarjeta-credito/listar-targeta/listar-targeta.component';
-import { RoutingComponent } from './components/routing/routing.component';
+import { RuteoComponent } from './components/ruteo/ruteo.component';
+import { DasboardRuteoComponent } from './components/ruteo/dasboard-ruteo/dasboard-ruteo.component';
+import { LayoutRuteoComponent } from './components/ruteo/layout-ruteo/layout-ruteo.component';
+import { FooterRouteoComponent } from './components/ruteo/dasboard-ruteo/footer-routeo/footer-routeo.component';
+import { ListUserRouteoComponent } from './components/ruteo/dasboard-ruteo/list-user-routeo/list-user-routeo.component';
+import { NavbarRouteoComponent } from './components/ruteo/dasboard-ruteo/navbar-routeo/navbar-routeo.component';
+
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http);
@@ -102,7 +105,13 @@ export function HttpLoaderFactory(http: HttpClient){
     TarjetaCreditoComponent,
     CrearTargetaComponent,
     ListarTargetaComponent,
-    RoutingComponent,
+    RuteoComponent,
+    DasboardRuteoComponent,
+    LayoutRuteoComponent,
+    FooterRouteoComponent,
+    DasboardRuteoComponent,
+    NavbarRouteoComponent,
+    ListUserRouteoComponent,
 
   ],
   imports: [
@@ -111,9 +120,9 @@ export function HttpLoaderFactory(http: HttpClient){
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAnalyticsModule,
-    AngularFirestoreModule
+    // AngularFireModule.initializeApp(environment.firebase),
+    // AngularFireAnalyticsModule,
+    // AngularFirestoreModule
   ],
   providers: [
     // {

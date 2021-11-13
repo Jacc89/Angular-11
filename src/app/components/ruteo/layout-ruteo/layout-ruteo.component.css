@@ -1,0 +1,32 @@
+.contenedor{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('../../../../assets/ruteo/tormenta.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: rgb(245, 244, 244);
+    
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:  40px;
+}
+hr{
+    border-color: rgb(235, 118, 35);
+    border-width: 5px;
+    align-items: center;
+}
+
+.btn-xl{
+    background-color: rgb(189, 122, 75);
+    border-color: rgb(235, 118, 35);
+    padding: 1rem 2rem;
+    border-radius:300px;
+}
+
+.btn-xl:hover{
+    background-color: rgb(235, 118, 35) ;
+    border-color: rgb(233, 101, 8) ;
+    border-width: 4px;
+
+}

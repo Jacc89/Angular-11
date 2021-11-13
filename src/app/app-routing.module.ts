@@ -18,6 +18,9 @@ import { BitlyComponent } from './components/bitly/bitly.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { ClonPixabayComponent } from './components/clon-pixabay/clon-pixabay.component';
 import { TarjetaCreditoComponent } from './components/tarjeta-credito/tarjeta-credito.component';
+import { RuteoComponent } from './components/ruteo/ruteo.component';
+import { LayoutRuteoComponent } from './components/ruteo/layout-ruteo/layout-ruteo.component';
+import { DasboardRuteoComponent } from './components/ruteo/dasboard-ruteo/dasboard-ruteo.component';
 
 
 const routes: Routes = [
@@ -38,7 +41,10 @@ const routes: Routes = [
   { path: 'noticias', component: NoticiasComponent },
   { path: 'pixabay', component: ClonPixabayComponent },
   { path: 'tarjeta', component: TarjetaCreditoComponent },
-  { path: '', redirectTo: 'tarjeta', pathMatch: 'full'}
+  { path: 'ruteo', component: RuteoComponent },
+  { path: 'layout', component: LayoutRuteoComponent },
+  { path: 'dashboard', component: DasboardRuteoComponent },
+  { path: '', redirectTo: 'layout', pathMatch: 'full'}
 ];
 
 
