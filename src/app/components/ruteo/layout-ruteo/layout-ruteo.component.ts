@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-layout-ruteo',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutRuteoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
+  }
+
+  irDashboard():void{
+    // guardar datos enviados.
+
+    // rediereccion
+    this.route.navigate(['/dashboard']);
   }
 
 }

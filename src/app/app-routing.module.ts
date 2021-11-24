@@ -21,6 +21,8 @@ import { TarjetaCreditoComponent } from './components/tarjeta-credito/tarjeta-cr
 import { RuteoComponent } from './components/ruteo/ruteo.component';
 import { LayoutRuteoComponent } from './components/ruteo/layout-ruteo/layout-ruteo.component';
 import { DasboardRuteoComponent } from './components/ruteo/dasboard-ruteo/dasboard-ruteo.component';
+import { ListUserRouteoComponent } from './components/ruteo/dasboard-ruteo/list-user-routeo/list-user-routeo.component';
+import { UserRuteoComponent } from './components/ruteo/dasboard-ruteo/user-ruteo/user-ruteo.component';
 
 
 const routes: Routes = [
@@ -43,7 +45,10 @@ const routes: Routes = [
   { path: 'tarjeta', component: TarjetaCreditoComponent },
   { path: 'ruteo', component: RuteoComponent },
   { path: 'layout', component: LayoutRuteoComponent },
-  { path: 'dashboard', component: DasboardRuteoComponent },
+  { path: 'dashboard', component: DasboardRuteoComponent, children:[
+    { path: '', component: ListUserRouteoComponent },
+    { path: 'usuario/:id', component: UserRuteoComponent }
+  ]},
   { path: '', redirectTo: 'layout', pathMatch: 'full'}
 ];
 

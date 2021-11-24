@@ -1,1 +1,11 @@
-<p>list-user-routeo works!</p>
+<div class="text-center mb-5" *ngIf="loading">
+    <div class="spinner-border color" role="status"></div>
+    <div class="spinner-border color" role="status"></div>
+    <div class="spinner-border color" role="status"></div>
+  </div>
+<div class="row">
+    <div *ngFor="let users of listUser" class="col-lg-3 m-30">
+        <app-card-user [user]="users"></app-card-user>
+    </div>
+    
+</div>

@@ -1,0 +1,14 @@
+
+.btn-xl{
+    background-color: rgb(189, 122, 75);
+    border-color: rgb(235, 118, 35);
+    padding: 1rem 2rem;
+    border-radius:300px;
+}
+
+.btn-xl:hover{
+    background-color: rgb(235, 118, 35) ;
+    border-color: rgb(233, 101, 8) ;
+    border-width: 4px;
+
+}

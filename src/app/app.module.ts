@@ -54,6 +54,8 @@ import { LayoutRuteoComponent } from './components/ruteo/layout-ruteo/layout-rut
 import { FooterRouteoComponent } from './components/ruteo/dasboard-ruteo/footer-routeo/footer-routeo.component';
 import { ListUserRouteoComponent } from './components/ruteo/dasboard-ruteo/list-user-routeo/list-user-routeo.component';
 import { NavbarRouteoComponent } from './components/ruteo/dasboard-ruteo/navbar-routeo/navbar-routeo.component';
+import { CardUserComponent } from './components/ruteo/dasboard-ruteo/list-user-routeo/card-user/card-user.component';
+import { UserRuteoComponent } from './components/ruteo/dasboard-ruteo/user-ruteo/user-ruteo.component';
 
 
 export function HttpLoaderFactory(http: HttpClient){
@@ -112,6 +114,8 @@ export function HttpLoaderFactory(http: HttpClient){
     DasboardRuteoComponent,
     NavbarRouteoComponent,
     ListUserRouteoComponent,
+    CardUserComponent,
+    UserRuteoComponent,
 
   ],
   imports: [
