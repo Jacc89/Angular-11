@@ -1,9 +1,17 @@
+<app-spinnernoti *ngIf="loading"></app-spinnernoti>
 <div class="row">
     <div class="col-lg-8 offset-lg-2">
         <div class="card tamaño">
-
+            <div class="body text-center">
+                <h4 class="title"> Nombre: {{ name }}</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Email: {{ email }}</li>
+                    <li class="list-group-item">Gender: {{ gender }}</li>
+                    <li class="list-group-item">Estado: {{ status }}</li>
+                </ul>
+            </div>
+            <button class="btn btn-block btn-xl" routerLink="/dasboard">VOLVER</button>
         </div>
-
     </div>
 </div>
 

@@ -8,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardUserComponent implements OnInit {
   @Input() user: any;
   // imgUrl : string;
-  // imgUrl : string;
   name!: string;
   email!: string;
   id!: number;
