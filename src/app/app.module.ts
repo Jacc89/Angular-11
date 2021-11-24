@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { MatSliderModule } from '@angular/material/slider';
 
 // componentes
 import { AppComponent } from './app.component';
@@ -56,6 +57,14 @@ import { ListUserRouteoComponent } from './components/ruteo/dasboard-ruteo/list-
 import { NavbarRouteoComponent } from './components/ruteo/dasboard-ruteo/navbar-routeo/navbar-routeo.component';
 import { CardUserComponent } from './components/ruteo/dasboard-ruteo/list-user-routeo/card-user/card-user.component';
 import { UserRuteoComponent } from './components/ruteo/dasboard-ruteo/user-ruteo/user-ruteo.component';
+import { AppEmpleadosComponent } from './components/app-empleados/app-empleados.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PreguntasRespuestasComponent } from './components/preguntas-respuestas/preguntas-respuestas.component';
+import { DashboardEmployComponent } from './components/preguntas-respuestas/dashboard-employ/dashboard-employ.component';
+import { PreguntaComponent } from './components/preguntas-respuestas/pregunta/pregunta.component';
+import { RespuestaComponent } from './components/preguntas-respuestas/respuesta/respuesta.component';
+import { BotoneraComponent } from './components/preguntas-respuestas/pregunta/botonera/botonera.component';
+import { NavbarEmployComponent } from './components/preguntas-respuestas/navbar-employ/navbar-employ.component';
 
 
 export function HttpLoaderFactory(http: HttpClient){
@@ -116,6 +125,13 @@ export function HttpLoaderFactory(http: HttpClient){
     ListUserRouteoComponent,
     CardUserComponent,
     UserRuteoComponent,
+    AppEmpleadosComponent,
+    PreguntasRespuestasComponent,
+    DashboardEmployComponent,
+    PreguntaComponent,
+    RespuestaComponent,
+    BotoneraComponent,
+    NavbarEmployComponent,
 
   ],
   imports: [
@@ -124,9 +140,11 @@ export function HttpLoaderFactory(http: HttpClient){
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     // AngularFireModule.initializeApp(environment.firebase),
     // AngularFireAnalyticsModule,
     // AngularFirestoreModule
+    MatSliderModule,
   ],
   providers: [
     // {

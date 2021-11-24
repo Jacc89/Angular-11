@@ -23,6 +23,8 @@ import { LayoutRuteoComponent } from './components/ruteo/layout-ruteo/layout-rut
 import { DasboardRuteoComponent } from './components/ruteo/dasboard-ruteo/dasboard-ruteo.component';
 import { ListUserRouteoComponent } from './components/ruteo/dasboard-ruteo/list-user-routeo/list-user-routeo.component';
 import { UserRuteoComponent } from './components/ruteo/dasboard-ruteo/user-ruteo/user-ruteo.component';
+import { AppEmpleadosComponent } from './components/app-empleados/app-empleados.component';
+import { PreguntasRespuestasComponent } from './components/preguntas-respuestas/preguntas-respuestas.component';
 
 
 const routes: Routes = [
@@ -49,7 +51,9 @@ const routes: Routes = [
     { path: '', component: ListUserRouteoComponent },
     { path: 'usuario/:id', component: UserRuteoComponent }
   ]},
-  { path: '', redirectTo: 'layout', pathMatch: 'full'}
+  { path: 'ABM', component: AppEmpleadosComponent },
+  { path: 'preguntas', component: PreguntasRespuestasComponent },
+  { path: '', redirectTo: 'preguntas', pathMatch: 'full'}
 ];
 
 

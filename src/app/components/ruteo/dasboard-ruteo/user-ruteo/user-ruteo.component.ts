@@ -8,7 +8,7 @@ import { RuteoService } from 'src/app/services/ruteo.service';
   styleUrls: ['./user-ruteo.component.css']
 })
 export class UserRuteoComponent implements OnInit {
-  id: number;
+  id!: number;
   loading = true;
   name!: string;
   email!: string;
@@ -20,9 +20,9 @@ export class UserRuteoComponent implements OnInit {
   constructor(private aRoute: ActivatedRoute,
               private  userService:  RuteoService) { 
 
-    const newLocal = this.aRoute.snapshot.paramMap.get('id');
-    this.id = newLocal;
-  }
+  //   const newLocal = this.aRoute.snapshot.paramMap.get('id');
+  //   this.id = +newLocal;
+ }
 
   ngOnInit(): void {
     // console.log(this.id);
